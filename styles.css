@@ -1,0 +1,206 @@
+/*color pallette
+https://coolors.co;
+#f7fff7 - almost white
+#343434 - dark gray - almost black
+#2f3061 - blue dark
+#ffe66d - yellow
+#a1c6d7 - blue light
+*/
+
+/*global styles------*/
+
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	color: #343434;
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+}
+
+img {
+	width: 300px;
+}
+a {
+	color: #ffe66d;
+}
+a:hover {
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 80px;
+	line-height: 1;
+}
+h2 {
+	font-size: 45px;
+}
+h1, h2 {
+	font-family: 'caveat', cursive;
+	font-weight: 400;
+	margin: 0; 
+}
+
+.content-wrap {
+	width: 800px;
+	margin: 0 auto;
+	padding: 60px 0; 
+}
+
+h3 + p {
+	font-style: italic;
+}
+
+/*-----------------profile______________*/
+
+header {
+	background: #2f3061;
+	color: #f7fff7;
+	text-align: center;
+}
+
+/*-----------------projects----------*/
+
+.projects {
+	background: #2f3061;
+	color: white;
+}
+
+.projects span {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	column-gap: 100px;
+	padding-left: 5px;
+}
+
+.projects section {
+	border-bottom: dashed;
+	border-color: white;
+	padding-top: 15px;
+	color: white;
+}
+.projects a {
+	color: #2f3061;
+}
+.projects .btn {
+	color: #2f3061;
+	background: #f7fff7;
+	text-decoration: none;
+	padding: 0px;
+	border-radius: 10px;
+	display: inline;
+}
+
+.projects .btn:hover {
+	background: rgba(70, 70, 97, 80%);
+	text-shadow: #ffe66d;
+
+}
+
+.project-item {
+	overflow: visible;
+	border-bottom: 0px;
+	padding: 0px 0;
+	display: inline-flex;
+}
+
+.project-item img {
+	margin: 0px;
+	display: inline-flex;
+}
+
+
+.project-item video {
+	float:left;
+	margin-right: 50px;
+}
+
+
+
+.project-item h3 {
+	margin-top: 0;
+}
+
+.project-item p {
+	padding-left: 15px;
+	float: right;
+}
+
+/*--------------------------work experience---------------------*/
+
+.work-experience {
+	background: #a1c6d7;
+}
+.job-item {
+	display: grid;
+	grid-template-columns: 2fr 2fr;
+	column-gap: 20px;
+	background: #a1c6d7;
+}
+
+.job-details{
+	margin: 5px;
+	padding: 5px;
+	text-align: center;
+}
+
+/*-----------------------education---------------------------*/
+
+.education {
+	background: #ffe66d ;
+}
+
+.skills{
+	background-color: #f7fff7
+}
+
+
+
+
+/*-------------contact info---------------------*/
+
+footer {
+	background: #343434;
+	color: #f7fff7;
+	text-align: center;
+}
+
+.contact-list {
+	list-style-type: none;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.contact-list a {
+	padding: 15px;
+	display: inline-block;
+}
+
+.contact-list p{
+	list-style-type: none;
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+}
+.form {
+	padding: 0;
+	margin:0;
+	display:block;
+}
+
+.form-group{
+	margin-bottom: 1.5em;
+	transition: all .3s;
+}
+
+.form-invalid{
+	outline: 2px solid red;
+}
